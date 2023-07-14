@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAGE RANK CHECK</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css"
+    />
+
+    <style>
+      body.loading {
+        pointer-events: none;
+        opacity: 0.8;
+        user-select: none;
+      }
+      main {
+        margin: auto;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      main > .pure-u-1 {
+        border-bottom: 1px solid #eee;
+        padding: 1rem;
+        margin: 1rem auto;
+        max-width: 600px;
+      }
+      #results__container {
+        width: 100%;
+        max-width: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="pure-u-1">
+        <h1>Hi, Welcome to page rank check.</h1>
+      </div>
+      <div class="pure-u-1">
+        <form class="pure-form pure-form-aligned" id="rank__form">
+          <div class="pure-control-group">
+            <label for="url">URL: </label>
+            <input
+              type="url"
+              name="url"
+              id="url"
+              class="pure-input-rounded"
+              placeholder="github.com"
+              required
+            />
+          </div>
+          <div class="pure-control-group">
+            <label for="query">Query: </label>
+
+            <input
+              type="text"
+              name="query"
+              id="query"
+              placeholder="react"
+              class="pure-input-rounded"
+              required
+            />
+          </div>
+          <div class="pure-controls">
+            <input type="reset" value="Reset" class="pure-button" />
+            <input
+              type="submit"
+              value="Submit"
+              id="submit"
+              class="pure-button pure-button-primary"
+            />
+          </div>
+        </form>
+      </div>
+      <div id="results__container" class="pure-u-1"></div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
