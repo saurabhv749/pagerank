@@ -4,7 +4,7 @@
 
 ![web app screenshot](assets/Screenshot.png)
 
-A Node.js utility function that checks that gets the rank of a webpage in different search engines based on a search query.
+A Node.js utility function that gets the rank of a webpage in different search engines based on a search query.
 
 ## How to use it ?
 
